@@ -11,6 +11,4 @@ pink_data["price"] = pd.to_numeric(pink_data["price"], errors="coerce")
 
 pink_data.loc[:, "Sales"] = pink_data["quantity"] * pink_data["price"]
 final_data = pink_data[["Sales", "date", "region"]]
-print(pink_data.dtypes)
-
 final_data.to_csv("sales.csv", index=False)
