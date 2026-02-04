@@ -34,6 +34,7 @@ app.layout = html.Div(
     children=[
         html.H1(
             "Soul Foods Pink Morsel Sales Dashboard",
+            id="main-header",
             style={"textAlign": "center", "color": "#2c3e50"}
         ),
 
